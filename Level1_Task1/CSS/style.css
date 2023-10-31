@@ -1,0 +1,566 @@
+/* START NavBar */
+
+.container .navbar .navbar-brand {
+    color: #616060;
+}
+
+.navbar a span {
+    color: #e99c2e;
+}
+
+.mainnavbar {
+    background-color: #f8f9fc;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+    width: 100%;
+    height: 60px;
+}
+
+.mainnavbar .container .navbar .navbar-collapse .icons a:nth-of-type(3) {
+    position: relative;
+}
+
+.mainnavbar .container .navbar .navbar-collapse .icons a:nth-of-type(3)::after {
+    content: '2';
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #e99c2e;
+    position: absolute;
+    font-size: 10px;
+    color: white;
+    right: -7px;
+    text-align: center;
+}
+
+
+
+.navbar .navbar-collapse .navbar-nav li:first-of-type a {
+    color: #e99c2e;
+}
+
+nav {
+    position: absolute;
+}
+
+
+.navbar .navbar-collapse .navbar-nav .nav-link {
+    transition: 0.5s all;
+    font-weight: 500;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-link:hover {
+    color: #e99c2e;
+}
+
+.container .navbar .icons a {
+    text-decoration: none;
+}
+
+.container .navbar .icons a span {
+    color: #616060;
+    font-size: 20px;
+    transition: 0.5s all;
+    margin-left: 10px;
+}
+
+.container .navbar .icons a span:hover {
+    color: #e99c2e;
+}
+
+/* END NavBar */
+
+/* Start Intro Section */
+.Home {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vvv {
+    background-image: url(../Images/R.png);
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    color: white;
+    padding-left: 200px;
+}
+
+.vvvv {
+    font-family: Arial, sans-serif;
+}
+
+/* END Intro Section */
+
+/* START About Section */
+
+.About {
+    min-height: 520px;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+.About .container .row .css img {
+    width: 110%;
+    height: 500px;
+}
+
+.About .container .row .css {
+    margin-top: 30px;
+    align-items: center;
+}
+
+.About .container .row .css h3,
+p {
+    color: #a8a6a6;
+}
+
+.About .container .row .css h4 {
+    color: #616060;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.About .container .row .css .price {
+    margin-left: 40px;
+    color: #616060;
+    position: relative;
+}
+
+.About .container .row .css .price::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: #616060;
+    top: 14px;
+    left: -42px;
+}
+
+.About .container .row .css p:last-of-type span {
+    text-decoration: line-through;
+    color: #a8a6a6;
+    margin-left: 10px;
+}
+
+.About .container .row .css button {
+    background-color: #e99c2e;
+    color: white;
+    padding: 15px;
+    width: 42%;
+    border: none;
+    transition: 0.5s all;
+    margin-top: 20px;
+}
+
+.About .container .row .css {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.About .container .row .css button:hover {
+    background-color: white;
+    color: #e99c2e;
+    border: 1px solid #e99c2e;
+}
+
+.About .container .row .css .second {
+    background-color: white;
+    color: #e99c2e;
+    padding: 15px;
+    width: 25%;
+    border: none;
+}
+
+.About .container .row .css .second:hover {
+    border: 1px solid #e99c2e;
+}
+
+/* END About Section */
+
+/* START Technical Skills Section */
+
+.section1 {
+    background-color: #f8f9fa;
+    padding-top: 60px;
+}
+
+.child1 {
+    width: 40%;
+}
+
+.child2 {
+    width: 50%;
+}
+
+.child1 img {
+    width: 94%;
+    margin-bottom: 15px;
+}
+
+.child2 h1 {
+    color: #616060;
+}
+
+.child2 p {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.child2 h4 {
+    color: orange;
+    float: left;
+}
+
+.child2 h3 {
+    float: right;
+    color: orange;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+.meter1 {
+    border: none;
+    height: 15px;
+    width: 100%;
+    border: #7e373b;
+    background-color: orange;
+    border-radius: 5px;
+    margin-bottom: 22px;
+}
+
+.meter2 {
+    border: none;
+    height: 15px;
+    width: 100%;
+    border: #7e373b;
+    background-color: orange;
+    border-radius: 5px;
+    margin-bottom: 22px;
+}
+
+.meter3 {
+    border: none;
+    height: 15px;
+    width: 75%;
+    border: #7e373b;
+    background-color: orange;
+    border-radius: 5px;
+    margin-bottom: 22px;
+}
+
+.meter4 {
+    border: none;
+    height: 15px;
+    width: 95%;
+    border: #7e373b;
+    background-color: orange;
+    border-radius: 5px;
+    margin-bottom: 22px;
+}
+
+.meter5 {
+    border: none;
+    height: 15px;
+    width: 100%;
+    border: #7e373b;
+    background-color: orange;
+    border-radius: 5px;
+    margin-bottom: 22px;
+}
+
+.meter6 {
+    border: none;
+    height: 15px;
+    width: 90%;
+    border: #7e373b;
+    background-color: orange;
+    border-radius: 5px;
+    margin-bottom: 22px;
+}
+
+
+.meter {
+    border: none;
+    height: 15px;
+    width: 100%;
+    background-color: rgb(224, 219, 219);
+    border-radius: 5px;
+    margin-bottom: 22px;
+}
+
+
+
+@media (max-width:1000px) {
+    .child1 {
+        width: 100%;
+    }
+
+    .child2 {
+        width: 100%;
+    }
+
+    .content {
+        width: 39%;
+    }
+
+    .content2 {
+        width: 100%;
+    }
+
+    .child {
+        width: 100%;
+    }
+
+    .content3 {
+        width: 39%;
+    }
+}
+
+/* END Technical Skills Section */
+
+/* START Experience Section */
+
+.section2 {
+    background-color: white;
+    margin-bottom: 30px;
+    padding-top: 60px;
+    margin-top: 60px;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.child {
+    width: 40%;
+    padding: 30px;
+    background-color: white;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    transition: all 0.5s;
+    margin-left: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    bottom: 0px;
+}
+
+.parent img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: block;
+    float: left;
+}
+
+.child h3 {
+    color: orange;
+    margin-bottom: 8px;
+    font-weight: 500;
+    padding: 0px;
+    padding-top: 20px;
+}
+
+.child h4 {
+    color: orangered;
+    margin-bottom: 8px;
+    font-weight: 500;
+    padding: 0px;
+}
+
+.parent span {
+    display: inline-flex;
+    padding: 10px;
+    color: orangered;
+    background-color: #f3f5fa;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent span:hover {
+    background-color: #47b2e4;
+    color: white;
+}
+
+.information {
+    float: right;
+    width: 55%;
+    padding-right: 20px;
+    padding-left: 10px
+}
+
+.child p {
+    margin-bottom: 15px;
+}
+
+hr {
+    width: 40px;
+    margin-top: 10px;
+    border: white;
+    border-bottom: 2px solid orange;
+    margin-left: 0px;
+}
+
+.main2 {
+    margin-bottom: 30px;
+}
+
+#main {
+    color: #616060;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* END Experience Section */
+
+/* START Projects Section */
+
+.section3 {
+    background-color: #f8f9fa;
+    padding-top: 60px;
+}
+
+.section3 .container h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    color: #616060;
+}
+
+.section3 .container .row .css5 {
+    margin-bottom: 40px;
+}
+
+.section3 .container .row .css5 .image4 {
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s all;
+}
+
+.section3 .container .row .css5 .image4 img {
+    width: 100%;
+    transition: 0.5s all;
+}
+
+.section3 .container .row .css5 .text3 h2 a {
+    text-decoration: none;
+    color: #616060;
+    font-size: 15px;
+    transition: 0.5s all;
+}
+
+.section3 .container .row .css5 .text3 p {
+    color: #a8a6a6;
+}
+
+.section3 .container .row .css5 .text3 p:nth-of-type(2) {
+    font-size: 12px;
+}
+
+.section3 .container .row .css5:hover .text3 h2 a {
+    color: #e99c2e;
+}
+
+.section3 .container .row .css5:hover .image4 img {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.section3 .container .row .css5 .image4::before {
+    content: '';
+    position: absolute;
+    background: rgb(106 119 129 / 57%);
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    transition: 0.7s all;
+    transform: scale(0);
+}
+
+.section3 .container .row .css5:hover .image4::before {
+    position: absolute;
+    transform: scale(1.2);
+    z-index: 9999;
+}
+
+.section3 .container .row .css5 .image4 img {
+    height: 200px;
+}
+
+/* END Projects Section */
+
+/* START Contact Section  */
+.section4 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: white;
+    text-align: center;
+}
+
+.section4 .container .social {
+    margin-bottom: 10px;
+}
+
+.section4 .container .social a {
+    text-decoration: none;
+}
+
+.section4 .container .social span {
+    color: #a8a6a6;
+    transition: 0.3s all;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.section4 .container .social span:hover {
+    color: #e99c2e;
+}
+
+.contact {
+    flex: 2;
+    text-align: left;
+    color: #878585;
+}
+
+.contact a {
+    color: orange;
+    text-decoration: none;
+}
+
+.reach {
+    flex: 1;
+    padding: 10px;
+
+}
+
+/* END Contact Section  */
+
+
+
+h1,
+h2,
+p {
+    margin: 10px 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    overflow-x: hidden;
+}

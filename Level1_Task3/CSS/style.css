@@ -1,0 +1,31 @@
+.buttons {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+input[type="button" i] {
+    width: 70px;
+    height: 70px;
+    border-radius: 5%;
+    font-size: 20px;
+}
+
+body {
+    display: block;
+    margin: 0px;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+
+.Calculator {
+    display: inline-block;
+}
+
+.display {
+    width: 285px;
+    height: 60px;
+    margin-bottom: 3px;
+    border-radius: 5%;
+    font-size: 20px;
+}

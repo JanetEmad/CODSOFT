@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+
+<head>
+    <title> Calculator </title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Images/calculator.png">
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+</head>
+
+<body>
+    <center>
+        <h1 style="font-family:barrio"> Welcome to My Calculator</h1>
+        <div class="Calculator">
+            <form name="form">
+                <input type="text" name="DisplayOperation" class="display">
+            </form>
+            <div class="buttons">
+                <input type="button" value="1" onclick="insert(1);">
+                <input type="button" value="2" onclick="insert(2);">
+                <input type="button" value="3" onclick="insert(3);">
+                <input type="button" value="+" onclick="insert('+');">
+            </div>
+            <div class="buttons">
+                <input type="button" value="4" onclick="insert(4);">
+                <input type="button" value="5" onclick="insert(5);">
+                <input type="button" value="6" onclick="insert(6);">
+                <input type="button" value="-" onclick="insert('-');">
+            </div>
+            <div class="buttons">
+                <input type="button" value="7" onclick="insert(7);">
+                <input type="button" value="8" onclick="insert(8);">
+                <input type="button" value="9" onclick="insert(9);">
+                <input type="button" value="*" onclick="insert('*');">
+            </div>
+            <div class="buttons">
+                <input type="button" value="/" onclick="insert('/');">
+                <input type="button" value="0" onclick="insert(0);">
+                <input type="button" value="." onclick="insert('.');">
+                <input type="button" value="=" onclick="equal();">
+            </div>
+            <div>
+                <input type="button" value="Clear All" onclick="Clear();" style="width: 293px; font-size: 20px;">
+            </div>
+        </div>
+    </center>
+
+    <script type="text/javascript">
+        function insert(num) {
+            var string = document.form.DisplayOperation.value;
+            var lastChar = string[string.length - 1];
+            if (string.length < 25) {
+                if (!isNaN(lastChar) || lastChar == null || !isNaN(num)) {
+                    document.form.DisplayOperation.value = string + num;
+                }
+                else if (num != lastChar) {
+                    document.form.DisplayOperation.value = string.replace(lastChar, num);
+                }
+            }
+            return document.form.DisplayOperation.value;
+        }
+
+        var result = [];
+
+        function add() {
+            result = document.form.DisplayOperation.value.split('+');
+            document.form.DisplayOperation.value = parseFloat(result[0]) + parseFloat(result[1]);
+            return document.form.DisplayOperation.value;
+        }
+
+        function subtract() {
+            result = document.form.DisplayOperation.value.split('-');
+            document.form.DisplayOperation.value = parseFloat(result[0]) - parseFloat(result[1]);
+            return document.form.DisplayOperation.value;
+        }
+
+        function multiply() {
+            result = document.form.DisplayOperation.value.split('*');
+            document.form.DisplayOperation.value = parseFloat(result[0]) * parseFloat(result[1]);
+            return document.form.DisplayOperation.value;
+        }
+
+        function divide() {
+            result = document.form.DisplayOperation.value.split('/');
+            document.form.DisplayOperation.value = parseFloat(result[0]) / parseFloat(result[1]);
+            return document.form.DisplayOperation.value;
+        }
+
+        var choice;
+        function equal() {
+
+            if (document.form.DisplayOperation.value.includes("+")) {
+                choice = add();
+                document.form.DisplayOperation.value = choice;
+            }
+            else if (document.form.DisplayOperation.value.includes("-")) {
+                choice = subtract();
+                document.form.DisplayOperation.value = choice;
+            }
+            else if (document.form.DisplayOperation.value.includes("/")) {
+                choice = divide();
+                document.form.DisplayOperation.value = choice;
+            }
+            else if (document.form.DisplayOperation.value.includes("*")) {
+                choice = multiply();
+                document.form.DisplayOperation.value = choice;
+            }
+            else {
+                document.form.DisplayOperation.value = document.form.DisplayOperation.value;
+                return document.form.DisplayOperation.value;
+            }
+            return choice;
+        }
+
+        function Clear() {
+            document.form.DisplayOperation.value = null;
+            return document.form.DisplayOperation.value;
+        }
+
+    </script>
+</body>
+
+</html>
